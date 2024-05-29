@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="Consulta de CEP"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etcep"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:inputType="text"
+        android:hint="CEP"
+        app:layout_constraintEnd_toEndOf="@+id/titulo"
+        app:layout_constraintStart_toStartOf="@+id/titulo"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <Button
+        android:id="@+id/btncep"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Consultar"
+        app:layout_constraintEnd_toEndOf="@+id/etcep"
+        app:layout_constraintStart_toStartOf="@+id/etcep"
+        app:layout_constraintTop_toBottomOf="@+id/etcep" />
+
+    <TextView
+        android:id="@+id/txtreultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado aparecerá aqui"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btncep"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/btncep"
+        app:layout_constraintTop_toBottomOf="@+id/btncep"
+        app:layout_constraintVertical_bias="0.397" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
