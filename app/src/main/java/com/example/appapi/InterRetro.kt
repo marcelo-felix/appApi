@@ -6,7 +6,7 @@ import retrofit2.http.Path
 
 interface InterRetro {
 
-    @GET("/ws/{cep}/son/")
+    @GET("/ws/{cep}/json/")
     fun get(@Path("cep") cep: String): Call<CEPModel>
 
 }

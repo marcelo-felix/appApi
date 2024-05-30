@@ -10,13 +10,13 @@ class CEPModel {
     @SerializedName("logradouro")
     var logradouro: String = ""
 
-    @SerializedName("complement")
+    @SerializedName("complemento")
     var complemento: String = ""
 
     @SerializedName("bairro")
     var bairro: String = ""
 
-    @SerializedName("delocalize")
+    @SerializedName("localidade")
     var localidade: String = ""
 
     @SerializedName("uf")
